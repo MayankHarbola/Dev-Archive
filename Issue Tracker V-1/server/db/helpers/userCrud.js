@@ -16,7 +16,7 @@ const userOperation = {
     //  },
     search(userObject,response){
         userModel.findOne(userObject,(err,doc)=>{
-           if(doc){
+           if(doc.length>0){
             response.status(200).json({status:'S',message:'Welcome '+doc.username,record:doc});
            }
            else{
@@ -36,7 +36,7 @@ const userOperation = {
             }
             else{
                 
-             if(doc){
+             if(doc.length>0){
 
                 const mail = require('../../utils/mail');
                 var homePage = 'www.google.com'
