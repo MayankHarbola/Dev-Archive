@@ -36,7 +36,7 @@ const userOperation = {
             }
             else{
                 
-             if(doc){
+             if(doc.length>0){
 
                 const mail = require('../../utils/mail');
                 var homePage = 'www.google.com'
