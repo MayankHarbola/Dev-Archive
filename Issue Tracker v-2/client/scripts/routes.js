@@ -24,7 +24,7 @@ app.config(function($routeProvider, $locationProvider){
     .when('/Dashboard',{
         templateUrl:'../AdminViews/Dashboard.html'
     })
-    
+    //Loda Harbola
     // ******************************Tester Routes ******************************************
 
     .when('/reportedissue',{
