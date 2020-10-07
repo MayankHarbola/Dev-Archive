@@ -15,7 +15,7 @@ app.use('/',adminRoute);
 app.use('/',TesterRoute);
 app.use('/',DevRoute);
 
-
+app.use('/');
 app.listen(process.env.PORT || 1234,(err)=>{
     if(err){
         console.log("Error in server Staring ❌",err);
