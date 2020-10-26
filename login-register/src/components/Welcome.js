@@ -11,7 +11,7 @@ export const Welcome = (props)=>{
           <h3>Welcome {props.username}</h3>  
 
           <button onClick = {props.chngpwd}>change Password</button>
-          <button>update Profile</button>
+        <button>edit profile</button>
         </div>
     )
     }
