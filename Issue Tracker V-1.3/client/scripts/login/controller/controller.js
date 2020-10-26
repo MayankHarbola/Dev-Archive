@@ -53,7 +53,8 @@ app.controller("ctrl",($scope,$window,$location,factory)=>{
              'password': $scope.curpassword,
              'newname': $scope.newusername,
              'newemail': $scope.email,
-             'newpwd': $scope.newpassword
+             'newpwd': $scope.newpassword,
+             'new word':$scope.newWord
            }
        
         //  console.log($scope.data);
@@ -70,6 +71,7 @@ app.controller("ctrl",($scope,$window,$location,factory)=>{
           
              
          },error=>{
+             console.log($scope.error);
              $scope.error = error;
          })
        }
