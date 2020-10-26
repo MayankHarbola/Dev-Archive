@@ -23,8 +23,9 @@ app.use(express.static("public"));
 // 	console.log("Server Start....");
 // })
 var messages= [];
-var server = app.listen(process.env.PORT || 1234,(err)=>{
+var server = app.listen(process.env.PORT || 8000,(err)=>{
 	if(err){
+		console.log(err);
 			throw err;
 	}
 	else{
