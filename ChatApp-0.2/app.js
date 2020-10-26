@@ -38,8 +38,10 @@ io.sockets.on('connection', function (socket) {
 
     console.log('connection :', socket.request.connection._peername);
     
-    // socket.emit('message', { message: 'Server is Saying welcome to the chat'+socket.id });
-    // socket.emit('data',messages); // send data
+	
+	
+	  socket.emit('message', { message: 'Server is Saying welcome to the chat'+socket.id });
+    socket.emit('data',messages); // send data
    
     ChatModel.find({},(err, docs)=>{
         console.log("me chl rha hu")
