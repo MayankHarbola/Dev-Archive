@@ -22,6 +22,10 @@ userRoutes.post('/chngPwd',(req,res)=>{
     userOperation.chngPwd(json,res);
 
 })
+userRoutes.post('/editProfile',(req,res)=>{
+const json = req.body;
+    userOperation.edit(json,res);
+}
 
 // userRoutes.get('/userlist',(req,res)=>{
     
